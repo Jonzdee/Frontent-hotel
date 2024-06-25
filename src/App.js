@@ -1,18 +1,7 @@
-
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import Home from './pages/Home';
+import Rootlayout from './layout/Rootlayout';
 
 function App() {
-  return (
-  
-     <div>
-       <Navbar />
-       <Home />
-      <Footer />
-     </div>
-   
-  );
+  return <Rootlayout />
 }
 
 export default App;
