@@ -5,7 +5,12 @@ module.exports = {
     flowbite.content(),
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors:{
+        SaddleBrown: '#8B4513',
+        'black-with-lighting': '#000000',
+      }
+    },
   },
   plugins: [
     flowbite.plugin(),

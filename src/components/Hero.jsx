@@ -1,4 +1,6 @@
 import React from 'react';
+import Animation from './Animation';
+import '../Styles/Animation.css'
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
@@ -28,13 +30,14 @@ const slides = [
   
   function Hero() {
     return (
-      <section className="relative  z-10 bg-black">
-        <Slider {...settings} className="main-slider-active">
+      <section className="relative bg-black">
+        <div className="absolute inset-0 h-full bg-gradient-to-r from-gray-950 via-SaddleBrown to-gray-950 z-0"></div>
+        <Slider {...settings} className="main-slider-active z-20 relative">
           {slides.map((slide) => (
             <div key={slide.id} className="slider-item">
               <div className="container mx-auto pt-3 pb-9">
                 <div className="flex justify-end items-center">
-                  <div className="w-full xl:w-1/4 ml-16 z-5">
+                  <div className="w-full xl:w-1/4 ml-16 relative">
                     <div className="slider-content text-white">
                       <span className="sub-title text-lg"><i className="fal fa-arrow-right"></i> Welcome to D&G Hotels</span>
                       <h1 className="text-5xl font-bold">Enjoy Vacations With <span className="text-yellow-500">Luxury Hotel</span></h1>
@@ -51,7 +54,7 @@ const slides = [
             </div>
           ))}
         </Slider>
-        {/* <div className="absolute inset-0 bg-gradient-to-r from-black to-transparent z-20"></div> */}
+        <Animation />
       </section>
     );
   }
