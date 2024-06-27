@@ -21,7 +21,7 @@ function Navbar() {
 
   return (
     <>
-      <nav className={` transition-all duration-500 ${scroll > 0 ? "bg-dark" : "bg-transparent"}
+      <nav className={`z-30 bg-black-with-lighting transition-all duration-500 ${scroll > 0 && "bg-[black]"}
        fixed top-0 w-dvw h-fit md:h-20 flex justify-between items-center text-white p-7`}>
 
         <div className="flex justify-between items-center w-full lg:w-auto pr-4 mr-[10%]">
@@ -66,7 +66,7 @@ function Navbar() {
           </button>
         </div>
 
-      </nav>
+      </nav >
     </>
   )
 }
