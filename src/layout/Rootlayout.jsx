@@ -9,9 +9,7 @@ const Rootlayout = () => {
         <>
             <AppointmentForm />
             <Navbar />
-            <section className=''>
-                <Outlet />
-            </section>
+            <Outlet />
             <Footer />
         </>
     )

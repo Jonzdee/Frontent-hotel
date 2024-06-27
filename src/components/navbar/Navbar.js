@@ -53,7 +53,7 @@ function Navbar() {
 
         <div className='flex justify-between items-center gap-8'>
           <Select />
-          <button className='hidden bg-secondary text-nowrap py-4 px-2 lg:flex gap-1 items-center cursor-pointer group'>
+          <button className='hidden bg-SaddleBrown text-nowrap py-4 px-2 lg:flex gap-1 items-center cursor-pointer group'>
             Book Now
             <MdOutlineKeyboardArrowRight size={20} className='transition-all duration-500 group-hover:translate-x-2' />
           </button>
